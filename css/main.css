@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+
+:root {
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  --box-shadow: 0 8px 22px rgba(248, 245, 245, 0.1);
+  --white: #f9f5f5;
+  --gray: #7ed2f6e7;
+  --blue: rgba(9, 126, 221, 0.679);
+  --spacing-xl: 2.625rem;
+  --spacing-large: 1.75rem;
+  --spacing-medium: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-tiny: 0.25rem;
+}
+
+body {
+  font-family: "Sora", "sans-serif";
+  line-height: 1.7;
+  color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 250px;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar .nav-link.active {
+  color: var(--primary) !important;
+}
+
+.hero {
+  background-image: url(/img/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(9, 126, 221, 0.679);
+  z-index: -1;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.card-effect {
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.iconbox {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 32px;
+  border-radius: 100px;
+  flex: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+}
+.social-icons a {
+  width: 34px;
+  height: 34px;
+  background-color: var(--primary);
+  border-radius: 2px solid var(--primary);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin-left: 5px;
+  transition: all 0.4s ease;
+  border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+  background-color: transparent;
+  border-color: var(--primary);
+}
+
+.service {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.service::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: var(--blue);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.service:hover .iconbox {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.service:hover h5,
+.service:hover p {
+  color: var(--white);
+}
+
+.service:hover::after {
+  opacity: 1;
+  top: 0;
+}
+
+.col-img {
+  background-image: url(/img/cover2.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.footer-top {
+  background-color: var(--dark);
+}
+
+/* .footer-top a {
+  color: var(--body);
+} */
+
+.list-unstyled a {
+  color: var(--body);
+}
+
+.footer-top a:hover {
+  color: var(--white);
+}
+
+.footer-bottom {
+  background-color: #242933;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 3;
+}
+
+.list-no-margin-bottom {
+  margin-bottom: 0;
+}
+
+/* Partners section */
+.partners h1 {
+  padding-top: var(--spacing-large);
+  text-align: center;
+}
+
+.partners h1,
+.partners .partners-container {
+  margin-bottom: var(--spacing-large);
+}
+
+.partners .partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* In partners, img can extend on all row, soo, spacing with justify-content: space-around. */
+  justify-content: space-around;
+
+  margin: 0 var(--spacing-xl);
+}
+
+.partners .image-wrapper {
+  width: 60px;
+
+  margin-right: var(--spacing-xl);
+  margin-left: var(--spacing-xl);
+  margin-bottom: var(--spacing-large);
+}
+
+.partners img {
+  width: 100%;
+  height: auto;
+
+  /* Gray out all fotos. */
+  filter: grayscale(100%);
+}
+
+.partners img:hover {
+  /* on hover, color foto. */
+  filter: grayscale(0);
+}
+
+@media (max-width: 768px) {
+  .partners .partners-container {
+    margin: 0 var(--spacing-small);
+  }
+}
+
+@media (max-width: 576px) {
+  .partners .image-wrapper {
+    margin-right: var(--spacing-medium);
+    margin-left: var(--spacing-medium);
+  }
+}

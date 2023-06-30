@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--Script pt email.js-->
+    <script src="/js/second.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("AXNptxsGdspJRGIm5");
+      })();
+    </script>
+    <script src="/js/index.js" defer></script>
+    <!--Link js file-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <title>Nima Expert Invest</title>
+  </head>
+
+  <body>
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-primary btn-floating btn-sm"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- END of Back to top button -->
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg py-2 sticky-top navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="img/logo1.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/pricing.html">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/team.html">Team</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/visit.html">Visit us</a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-primary ms-lg-3"
+            data-bs-toggle="modal"
+            data-bs-target="#joinus"
+          >
+            Join Us
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--END NAVBAR-->
+
+    <!--HERO-->
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mx-auto text-center">
+            <h1 class="display-4 text-white">Build robust landing page now</h1>
+            <p class="text-white my-3">
+              A landing page is a standalone web page that is designed to
+              convert visitors into leads or customers. Unlike a website's
+              homepage, a landing page is typically focused on a specific goal,
+              such as promoting a product or service, generating leads, or
+              collecting customer information.
+            </p>
+
+            <a href="pages/projects.html" class="btn btn-primary"
+              >Our Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END HERO-->
+
+    <!--SERVICES-->
+    <section id="services">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-primary">SERVICES</h6>
+            <h1>Our Services</h1>
+            <p>
+              High-quality web services are those that are designed, developed,
+              and delivered with a focus on meeting the needs and expectations
+              of the user.
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="bx bx-check-square"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Front-end development</h5>
+              <p>
+                Our front-end developers can implement any design idea and
+                ensure all interface elements work properly. We work with all
+                most-used JavaScript frameworks, such as Angular, React, Meteor,
+                Vue, Next, Ember.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="bx bx-briefcase-alt-2"></i>
+              </div>
+              <h5 class="mt-4 mb-2">UX and UI design</h5>
+              <p>
+                We start designing a web app with the analysis of target
+                audience and planning convenient, quick and frictionless user
+                journeys. Along the way, our UI designers join in to wrap the
+                interface into a stylish cover.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="bx bx-pie-chart-alt-2"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Back-end development</h5>
+              <p>
+                Our developers accurately implement the business logic of your
+                web app on the back end. We rely on proven frameworks and ensure
+                fast and quality coding in .Net, Java, Python, Node.js, PHP, Go
+                and more.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="bx bx-bolt-circle"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Business analysis</h5>
+              <p>
+                Our business analysts focus on the needs of your target audience
+                to perform requirements engineering and outline the scope of the
+                solution. They also bridge the gap between business stakeholders
+                and an IT team.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="bx bx-label"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Architecture</h5>
+              <p>
+                Our solution architects will plan all functional components and
+                select optimal techs for them to ensure that the business logic
+                to be implemented is feasible and full.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="bx bx-extension"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Integration</h5>
+              <p>
+                We set up APIs to integrate your web app with corporate or
+                third-party systems and services. App integration ensures
+                immediate data synchronization across systems.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="bx bx-receipt"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Testing and QA</h5>
+              <p>
+                We guarantee that your web solution will function flawlessly,
+                work fast, be user-friendly and secure. We have a team of
+                skilled testing engineers to make promises like that, and we
+                know it.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="bx bx-check-shield"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Help desk</h5>
+              <p>
+                Providing L1, L2 and L3 support services, we deliver hot-fixes
+                within 24 hours to prevent or resolve any issues in usage,
+                technology and code that may arise. We help you provide high
+                availability and trouble-free.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END SERVICES-->
+
+    <!--FEATURES-->
+    <section class="bg-light" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-img"></div>
+          <div class="col-lg-6 py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 offset-md-1">
+                  <h6 class="text-primary">Why to choose us?</h6>
+                  <h1>Best solution for you business</h1>
+                  <p>
+                    We deliver high-quality solutions that exceed your
+                    expectations.
+                  </p>
+
+                  <div class="features d-flex mt-5">
+                    <div class="iconbox me-3">
+                      <i class="bx bx-time-five"></i>
+                    </div>
+                    <div>
+                      <h5>Web App Integration Services</h5>
+                      <p>
+                        We always stay on top of the latest developments in
+                        deployment, customization, and integration to create the
+                        perfect, seamless approach to how you utilize your
+                        software.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="features d-flex">
+                    <div class="iconbox me-3">
+                      <i class="bx bx-line-chart"></i>
+                    </div>
+                    <div>
+                      <h5>Mobile App Development Services</h5>
+                      <p>
+                        Using our many years of experience in mobile app
+                        development, our Mobile App Development Team will help
+                        you create smooth, seamless experiences on any mobile
+                        device.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="features d-flex">
+                    <div class="iconbox me-3">
+                      <i class="bx bx-hive"></i>
+                    </div>
+                    <div>
+                      <h5>Enterprise Web Development Solutions</h5>
+                      <p>
+                        We use custom APIs and our vast knowledge of web
+                        services to build Enterprise Web Applications for
+                        digital marketing, CRM, inventory control, expedited
+                        workflows, and so much more.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END FEATURES-->
+
+    <!--PARTNERS-->
+    <section class="partners">
+      <div class="container">
+        <div class="col-md-8 mx-auto text-center">
+          <h1>Our Partners</h1>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="partners-container">
+          <div class="image-wrapper">
+            <a href="https://www.hp.com" target="_blank">
+              <img src="img/Hp.png" alt="HP" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="img/Youtube.png" alt="youtube" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="img/Linkedin.png" alt="Linkedin" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://myspace.com/" target="_blank">
+              <img src="img/myspace.png" alt="Myspace" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://Wordpress.com/" target="_blank">
+              <img src="img/Wordpress.png" alt="Wordpress" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://ubuntu.com/" target="_blank">
+              <img src="img/Ubuntu.png" alt="Ubuntu" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://twitter.com/" target="_blank">
+              <img src="img/Twitter.png" alt="Twitter" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.opensuse.org/" target="_blank">
+              <img src="img/Opensuse.png" alt="Opensuse" />
+            </a>
+          </div>
+
+          <div class="image-wrapper">
+            <a href="https://www.vimeo.com/" target="_blank">
+              <img src="img/Vimeo.png" alt="Vimeo" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.yahoo.com/" target="_blank">
+              <img src="img/Yahoo.png" alt="Yahoo" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.flickr.com/" target="_blank">
+              <img src="img/Flickr.png" alt="Flickr" />
+            </a>
+          </div>
+
+          <div class="image-wrapper">
+            <a href="https://www.evernote.com/" target="_blank">
+              <img src="img/Evernote.png" alt="Evernote" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.soundcloud.com/" target="_blank">
+              <img src="img/Soundcloud.png" alt="Soundcloud" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.ebay.com/" target="_blank">
+              <img src="img/Ebay.png" alt="Ebay" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.ask.com/" target="_blank">
+              <img src="img/Ask.png" alt="Ask" />
+            </a>
+          </div>
+          <div class="image-wrapper">
+            <a href="https://www.amazon.com/" target="_blank">
+              <img src="img/Amazon.png" alt="Amazon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END PARTNERS-->
+
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-3">
+              <img class="logo" src="img/logo-white.png" alt="white-logo" />
+            </div>
+            <div class="col-lg-6"></div>
+            <div class="col-lg-3">
+              <ul class="list-unstyled list-no-margin-bottom">
+                <li>Address: Romania, Brasov, Street Cezar Boliac 16</li>
+                <li>
+                  Email:<a href="mailto:adrian.neculai@icloud.com">
+                    adrian.neculai@icloud.com</a
+                  >
+                </li>
+                <li>Phone:<a href="tel:+40723383736"> (+40)723383736</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row py-4">
+            <div class="col-lg-3">
+              <p class="mb-0">© 2023 copyright all right reserved</p>
+            </div>
+            <div class="col-lg-6"></div>
+            <div class="col-lg-3">
+              <div class="social-icons">
+                <a href="https://github.com/NeculaiAdrian" target="_blank"
+                  ><i class="bx bxl-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/adrian-neculai-28836572"
+                  target="_blank"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--END FOOTER-->
+
+    <!--Button Join US from top page-->
+    <div
+      class="modal fade"
+      id="joinus"
+      tabindex="-1"
+      aria-labelledby="joinus"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="join-us">Join us</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you.</p>
+            <form id="myForm2">
+              <div class="bm-3">
+                <label for="first-name" class="col-form-label"
+                  >First Name:</label
+                >
+                <input
+                  type="text"
+                  name="Name"
+                  class="form-control"
+                  id="first-name"
+                  required
+                />
+              </div>
+              <div class="bm-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  required
+                />
+              </div>
+              <div class="bm-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="bm-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" required />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              onclick="sendMail2()"
+              type="submit"
+              value="Submit"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END Button Join US from top page-->
+  </body>
+</html>
