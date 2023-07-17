@@ -41,6 +41,10 @@ img {
   width: 100%;
 }
 
+.color-change {
+  color: #ffbb33;
+}
+
 .navbar {
   box-shadow: var(--box-shadow);
 }
