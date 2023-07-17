@@ -63,6 +63,29 @@ img {
   color: var(--primary) !important;
 }
 
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  opacity: 1;
+}
+
+a:is(:link, :active, :visited).active {
+  color: var(--primary);
+}
+
 .hero {
   background-image: url(../img/cover.jpg);
   background-position: center;
