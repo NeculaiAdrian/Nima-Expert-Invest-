@@ -23,10 +23,34 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script defer src="../js/activePage.js"></script>
+    <!--Script pt email.js-->
+    <script defer src="../js/second.js"></script>
+    
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("AXNptxsGdspJRGIm5");
+      })();
+    </script>
+    <script defer src="../js/index.js" defer></script>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/pages.css" />
   </head>
   <body>
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-primary btn-floating btn-sm"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- END of Back to top button -->
     <nav class="navbar navbar-expand-lg py-2 sticky-top navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
@@ -73,6 +97,10 @@
             <li class="nav-item">
               <a class="nav-link" href="../pages/visit.html">Visit us</a>
             </li>
+            <button
+            class="btn btn-primary ms-lg-3"
+            data-bs-toggle="modal"
+            data-bs-target="#joinus">Join Us</button>
           </ul>
         </div>
       </div>
@@ -209,5 +237,80 @@
         </div>
       </div>
     </footer>
+    <!--Button Join US from top page-->
+    <div
+      class="modal fade"
+      id="joinus"
+      tabindex="-1"
+      aria-labelledby="joinus"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="join-us">Join us</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you.</p>
+            <form id="myForm2">
+              <div class="bm-3">
+                <label for="first-name" class="col-form-label"
+                  >First Name:</label
+                >
+                <input
+                  type="text"
+                  name="Name"
+                  class="form-control"
+                  id="first-name"
+                  required
+                />
+              </div>
+              <div class="bm-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  required
+                />
+              </div>
+              <div class="bm-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="bm-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" required />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              onclick="sendMail2()"
+              type="submit"
+              value="Submit"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END Button Join US from top page-->
+
   </body>
 </html>
