@@ -10,8 +10,8 @@ ol {
   margin-bottom: var(--spacing-xl);
 }
 
-.bg-light img {
-  padding-bottom: 20px; 
+.bg-light article {
+   margin-top: var(--spacing-xl);
 }
 
 
