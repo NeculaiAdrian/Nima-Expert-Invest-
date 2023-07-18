@@ -11,7 +11,7 @@ ol {
 }
 
 .bg-light img {
-  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--space-xxl); 
 }
 
 
