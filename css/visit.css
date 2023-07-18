@@ -10,6 +10,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  margin-bottom: var(--spacing-xl);
 }
 
 .video-responsive {
@@ -26,6 +27,4 @@
   position: absolute;
 }
 
-.container-fluid {
-  margin-bottom: var(--spacing-xl);
-}
+
