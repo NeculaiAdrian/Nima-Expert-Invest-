@@ -25,3 +25,7 @@
   width: 100%;
   position: absolute;
 }
+
+iframe {
+  margin-bottom: var(--spacing-xl);
+}
