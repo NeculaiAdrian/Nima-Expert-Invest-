@@ -6,6 +6,10 @@ ol {
   text-align: left;
 }
 
+.bg-light h1 {
+  margin-bottom: (--spacing-xl);
+}
+
 
 
 
