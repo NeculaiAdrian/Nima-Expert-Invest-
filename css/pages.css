@@ -10,8 +10,8 @@ ol {
   margin-bottom: var(--spacing-xl);
 }
 
-.bg-light img {
-  margin-bottom: var(--spacing-xl);
+.bg-light article {
+  margin-top: var(--spacing-xl);
 }
 
 
