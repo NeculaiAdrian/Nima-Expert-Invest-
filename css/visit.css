@@ -26,6 +26,6 @@
   position: absolute;
 }
 
-iframe {
+.container-fluid {
   margin-bottom: var(--spacing-xl);
 }
