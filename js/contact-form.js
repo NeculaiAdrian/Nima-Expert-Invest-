@@ -1,4 +1,4 @@
-//Pt Contact Button
+//For Contact Button
 function sendMail() {
   var params = {
     name: document.getElementById("name").value,
