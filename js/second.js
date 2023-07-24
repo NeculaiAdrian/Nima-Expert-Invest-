@@ -1,4 +1,4 @@
-//Pt Join Button
+//For Join Button
 
 function sendMail2() {
   var params = {
